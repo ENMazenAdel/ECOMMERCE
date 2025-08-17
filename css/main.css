@@ -282,8 +282,8 @@ hr {
     width: 590px;
     text-align: center;
     position: absolute;
-    top: 20%;
-    left: 50%;
+    top: 10%;
+    left: 70%;
     transform: translateX(-50%);
 }
 
@@ -618,6 +618,9 @@ hr {
 .customer>div {
     display: flex;
     align-items: center;
+    background-color: white;
+    border-radius: 50px 10px 10px 50px;
+    border: #00000070 1px solid;
 }
 
 .customer>div img {
@@ -870,9 +873,11 @@ hr {
 .footer-site .div1 .send-email {
     display: flex;
 }
+
 .footer-site .div1 .send-email .email {
     border-radius: 5px;
 }
+
 .footer-site .div1 div .subscribe {
     display: inline-block;
     padding: 10px 20px;
@@ -938,7 +943,7 @@ hr {
     color: #4f4e4e;
 }
 
-.footer-site .div3 p span, 
+.footer-site .div3 p span,
 .footer-site .div3 p a {
     color: #cc66ff;
     padding: 0 2px;
