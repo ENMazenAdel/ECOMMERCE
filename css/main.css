@@ -970,377 +970,215 @@ hr {
     }
 }
 
-/* =========================================================
-   RESPONSIVE MEDIA QUERIES (PRECISION ADJUSTMENTS)
-   ========================================================= */
+/* =======================
+   Media Queries
+   ======================= */
 
-/* Large Desktops (1200px and above) - Minor adjustments */
-@media (min-width: 1200px) {
-  .main-background .text-center {
-    left: 65%;
-    width: 550px;
-  }
-}
-
-/* Medium Devices (Tablets Landscape, 992px - 1199px) */
-@media (max-width: 1199.98px) and (min-width: 992px) {
+@media (max-width: 1024px) {
+  /* Adjust container width */
   .container {
-    width: 92%;
-  }
-  
-  /* Header */
-  .area-1 div {
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 5px 0;
-  }
-  
-  /* Hero */
-  .main-background .text-center {
-    left: 65%;
-    width: 500px;
-  }
-  .main-background h1 {
-    font-size: 48px;
-  }
-  
-  /* Products */
-  .type-product > div {
-    width: 32%;
-    height: 350px;
-  }
-  
-  .trend-area .product-trend div {
-    width: 23.5%;
-  }
-  
-  /* Testimonials */
-  .customer p {
-    width: 70%;
-  }
-}
-
-/* Tablets (Portrait, 768px - 991px) */
-@media (max-width: 991.98px) and (min-width: 768px) {
-  .container {
-    width: 94%;
-  }
-  
-  /* Header */
-  .area-2 {
-    height: auto;
-    padding: 15px 0;
-  }
-  .center-area {
-    order: 3;
-    width: 100%;
-    margin-top: 15px;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-  .area-2 .main-menue {
-    margin: 0 10px;
-  }
-  
-  /* Hero */
-  .main-background {
-    height: 75vh;
-  }
-  .main-background .text-center {
-    left: 60%;
-    width: 400px;
-  }
-  .main-background h1 {
-    font-size: 42px;
-  }
-  .main-background p {
     width: 90%;
-    font-size: 20px;
   }
-  
-  /* Products */
-  .type-product > div {
-    width: 48%;
-    height: 320px;
-    margin: 20px 1%;
-  }
-  
-  .trend-area .product-trend {
-    flex-wrap: wrap;
-  }
-  .trend-area .product-trend div {
-    width: 48%;
-    margin: 2% 1%;
-  }
-  
-  /* Testimonials */
-  .customer {
-    height: 450px;
-  }
-  .customer p {
-    width: 80%;
-    font-size: 20px;
-  }
-  
-  /* News */
-  .latest-news {
-    flex-wrap: wrap;
-  }
-  .latest-news > div {
-    width: 48%;
-    margin-bottom: 30px;
-  }
-  
-  /* Services */
-  .delivery {
-    flex-wrap: wrap;
-  }
-  .delivery div {
-    width: 48%;
-    margin-bottom: 30px;
-  }
-  
-  /* Footer */
-  .footer-site .div1 .send-email .email {
-    width: 300px;
-  }
-}
 
-/* Small Tablets & Large Phones (576px - 767px) */
-@media (max-width: 767.98px) and (min-width: 576px) {
-  /* Header */
+  /* HEADER: Top Utility Bar */
   .area-1 {
+    flex-direction: column;
     height: auto;
-    padding: 8px 0;
-  }
-  .area-1 div {
-    width: 100%;
-    justify-content: center;
-    margin: 3px 0;
-  }
-  
-  /* Navigation */
-  .area-2 .center-area .link-center {
-    margin: 0 5px;
-  }
-  
-  /* Hero */
-  .main-background {
-    height: 60vh;
-  }
-  .main-background .text-center {
-    width: 350px;
-    left: 55%;
-  }
-  .main-background span {
-    font-size: 48px;
-  }
-  .main-background h1 {
-    font-size: 36px;
-  }
-  
-  /* Products */
-  .trend-area .trending {
-    flex-direction: column;
-    align-items: center;
-  }
-  .trend-area .trending h2 {
-    margin-bottom: 15px;
-  }
-  
-  /* Testimonials */
-  .customer {
-    height: 400px;
-  }
-  .customer > a.left,
-  .customer > a.right {
-    top: 80%;
-  }
-  
-  /* Footer */
-  .footer-site .div1 .send-email {
-    flex-direction: column;
-    align-items: center;
-  }
-  .footer-site .div1 .send-email .email {
-    width: 100%;
-    margin-bottom: 10px;
-  }
-  .footer-site .div2 {
-    flex-wrap: wrap;
-  }
-  .footer-site .div2 > div {
-    width: 48%;
-    margin-bottom: 30px;
-  }
-}
-
-/* Mobile Devices (up to 575px) */
-@media (max-width: 575.98px) {
-  /* Base */
-  .container {
-    width: 96%;
-  }
-  
-  /* Header */
-  .area-1 {
+    padding: 10px 20px;
     font-size: 12px;
   }
-  .area-1 a {
-    padding: 0 5px;
+  .area-1 div {
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
   }
-  .area-2 .left-area img {
-    width: 160px;
+
+  /* Main Navigation Area */
+  .area-2 {
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+    padding: 10px 0;
   }
-  .center-area {
-    justify-content: space-around;
+  .area-2 a {
+    font-size: 16px;
+    padding: 5px 10px;
   }
-  .area-2 .main-menue .drop-menue {
-    width: 240px;
+  .left-area img {
+    width: 150px;
   }
-  
-  /* Hero */
+
+  /* Hero Section */
   .main-background {
-    height: 50vh;
-    background-position: 65% center;
+    height: auto;
   }
   .main-background .text-center {
-    width: 90%;
+    width: 80%;
     left: 50%;
-    top: 7%;
+    transform: translateX(-50%);
+    top: 20%;
   }
   .main-background span {
-    font-size: 36px;
+    font-size: 40px;
   }
   .main-background h1 {
-    font-size: 28px;
+    font-size: 40px;
+  }
+  .main-background p {
+    width: 80%;
+    font-size: 18px;
+  }
+  .main-background a {
+    padding: 12px 20px;
+    font-size: 16px;
+  }
+
+  /* Product Categories */
+  .type-product {
+    flex-direction: column;
+    align-items: center;
+  }
+  .type-product > div {
+    width: 90%;
+    height: auto;
+    margin: 20px 0;
+  }
+
+  /* Trending Products */
+  .trend-area .product-trend {
+    flex-direction: column;
+    align-items: center;
+  }
+  .trend-area .product-trend div {
+    width: 90%;
+    height: auto;
+    margin: 20px 0;
+  }
+
+  /* Testimonials */
+  .customer {
+    height: auto;
+    padding: 20px;
+  }
+
+  /* Latest News */
+  .latest-news {
+    flex-direction: column;
+    align-items: center;
+  }
+  .latest-news > div {
+    width: 80%;
+    margin: 20px 0;
+  }
+
+  /* Services */
+  .delivery {
+    flex-direction: column;
+  }
+  .delivery div>div {
+    width: 80%;
+  }
+
+  /* Footer */
+  .footer {
+    padding: 20px 0;
+  }
+  .footer-site > div {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-site .div1,
+  .footer-site .div2,
+  .footer-site .div3 {
+    width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Further adjustments for mobile phones */
+  body {
+    font-size: 14px;
+  }
+
+  /* Header Utility Bar */
+  .area-1 {
+    font-size: 11px;
+  }
+  .area-1 div {
+    gap: 6px;
+  }
+
+  /* Main Navigation */
+  .area-2 {
+    height: auto;
+  }
+  .area-2 a {
+    font-size: 14px;
+    padding: 4px 8px;
+  }
+  .left-area img {
+    width: 120px;
+  }
+
+  /* Hero Section */
+  .main-background .text-center {
+    width: 90%;
+    top: 15%;
+  }
+  .main-background span {
+    font-size: 30px;
+  }
+  .main-background h1 {
+    font-size: 30px;
   }
   .main-background p {
     font-size: 16px;
-    width: 95%;
   }
   .main-background a {
     padding: 10px 20px;
-    font-size: 16px;
+    font-size: 14px;
   }
-  
-  /* Products */
+
+  /* Product Categories */
   .type-product > div {
     width: 100%;
-    height: 280px;
-    margin: 15px 0;
-  }
-  
-  .trend-area {
-    margin-top: 40px;
-  }
-  .trend-area .trending h2 {
-    font-size: 28px;
-  }
-  .trend-area .trending a {
-    font-size: 18px;
     height: auto;
   }
+
+  /* Trending Products */
   .trend-area .product-trend div {
     width: 100%;
-    margin: 20px 0;
+    height: auto;
   }
-  .trend-area > a {
-    font-size: 24px;
-  }
-  .trend-area .left {
-    left: 5px;
-  }
-  .trend-area .right {
-    right: 5px;
-  }
-  
+
   /* Testimonials */
   .customer {
     height: auto;
-    padding: 30px 0;
+    padding: 15px;
   }
-  .customer > h2 {
-    font-size: 28px;
-  }
-  .customer > p {
-    width: 90%;
-    font-size: 16px;
-    margin: 15px 0;
-  }
-  .customer > div {
-    margin: 20px 0;
-    border-radius: 50px;
-    padding: 10px;
-  }
-  .customer > a {
-    position: relative;
-    display: inline-block;
-    margin: 0 20px;
-    top: auto;
-    left: auto;
-  }
-  
-  /* News */
-  .section-five h2 {
-    font-size: 28px;
-  }
-  .latest-news > div {
-    width: 100%;
-    margin-bottom: 30px;
-  }
-  .latest-news > div a {
-    font-size: 20px;
-  }
-  
-  /* Services */
-  .delivery div {
-    width: 100%;
-    margin-bottom: 25px;
-  }
-  
-  /* Footer */
-  .footer-site .div1 {
-    text-align: center;
-  }
-  .footer-site .div1 > div {
-    width: 100%;
-    margin-bottom: 20px;
-  }
-  .footer-site .div1 .send-email {
+
+  /* Latest News */
+  .latest-news {
     flex-direction: column;
   }
-  .footer-site .div1 .send-email .email {
-    width: 100%;
-    margin-bottom: 10px;
+  .latest-news > div {
+    width: 90%;
+    margin: 10px 0;
   }
-  .footer-site .div2 > div {
-    width: 100%;
-    text-align: center;
-    margin-bottom: 30px;
-  }
-  .footer-site .div3 p {
-    text-align: center;
-    font-size: 14px;
-  }
-}
 
-/* Mobile Landscape Orientation */
-@media (max-height: 500px) and (orientation: landscape) {
-  .main-background {
-    height: 100vh;
+  /* Services */
+  .delivery {
+    flex-direction: column;
   }
-  .main-background .text-center {
-    top: 5%;
+  .delivery div>div {
+    width: 90%;
   }
-  .type-product > div {
-    height: 250px;
-  }
-}
 
-/* High-density Displays */
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-  .main-background {
-    background-image: url(../images/Screenshot_2025-08-17_155258@2x.png);
+  /* Footer */
+  .footer {
+    padding: 15px 0;
+  }
+  .footer-site > div {
+    width: 100%;
   }
 }
