@@ -69,4 +69,4 @@ Ideal for developers looking to study:
 - CSS animations and transitions
 - Clean HTML5 semantic structure
 
-**Live Demo:** [Link to GitHub Pages deployment if available]
+**Live Demo:** [https://enmazenadel.github.io/ECOMMERCE/]
